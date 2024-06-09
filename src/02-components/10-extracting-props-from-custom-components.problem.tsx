@@ -10,11 +10,12 @@ export const NavBar = (props: {
 
 // Your app:
 
+import { ComponentProps } from "react";
 import { Equal, Expect } from "../helpers/type-utils";
 
-type NavBarProps = unknown;
+export type NavBarProps = ComponentProps<typeof NavBar>;
 
-type test = Expect<
+export type test = Expect<
   Equal<
     NavBarProps,
     {

@@ -1,20 +1,16 @@
 import React from "react";
 
-interface Props {
+export interface ButtonProps {
   className: string;
 }
 
 /* @ts-expect-error */
-export const Button = (props: Props) => {
+export const Button: React.FC<ButtonProps> = (props) => {
   return {
     ohDear: "123",
   };
 };
 
 const Parent = () => {
-  return (
-    <>
-      <Button className="my-class"></Button>
-    </>
-  );
+  return <Button className="my-class"></Button>;
 };

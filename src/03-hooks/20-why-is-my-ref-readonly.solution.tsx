@@ -5,11 +5,11 @@ export const Component = () => {
 
   firstOverload.current = "123j12jhb123jhb";
 
-  const secondOverload = useRef<string>(null);
+  // const secondOverload = useRef<string>(null);
 
-  secondOverload.current = "Hello";
+  // secondOverload.current = "Hello";
 
-  const thirdOverload = useRef<string>();
+  // const thirdOverload = useRef<string>();
 
   return null;
 };

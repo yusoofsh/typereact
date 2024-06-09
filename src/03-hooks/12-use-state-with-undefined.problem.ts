@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Equal, Expect } from "../helpers/type-utils";
 
-interface Data {
+export interface Data {
   id: number;
   name: string;
 }
@@ -11,7 +11,7 @@ const fetchData = () => {
 };
 
 export const Component = () => {
-  const [data, setData] = useState();
+  const [data, setData] = useState<Data>();
 
   useEffect(() => {
     fetchData().then((val) => {

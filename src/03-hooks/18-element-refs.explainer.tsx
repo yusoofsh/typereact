@@ -9,11 +9,12 @@ export const nullAsRef = (
 );
 
 // Legacy refs are supported!
-export const stringAsRef = <div ref={"legacyRef"}></div>;
+// export const stringAsRef = <div ref={"legacyRef"}></div>;
 
 export const undefinedAsRef = (
   <div
     ref={{
+      //@ts-expect-error
       // Type 'undefined' is not assignable to
       // type 'HTMLDivElement | null'.
       current: undefined,
